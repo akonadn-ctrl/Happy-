@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>هدية عيد ميلاد سمية ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+/* =========================
+   المشاهد
+========================= */
+
+.scene{
+    position:fixed;
+    inset:0;
+    display:none;
+    overflow:hidden;
+}
+
+.scene.active{
+    display:flex;
+}
+
+/* =========================
+   المشهد الأول
+========================= */
+
+#scene1{
+    align-items:center;
+    justify-content:center;
+    background:
+        radial-gradient(circle at center,#4b0719 0%,#18030b 45%,#000 100%);
+}
+
+.intro-title{
+    position:absolute;
+    top:9%;
+    width:100%;
+    text-align:center;
+    font-size:19px;
+    color:#ffd5de;
+    text-shadow:0 0 15px #ff1744;
+}
+
+.intro-sub{
+    position:absolute;
+    bottom:12%;
+    color:#ffd2dc;
+    font-size:14px;
+}
+
+.heart-button{
+    position:relative;
+    width:210px;
+    height:190px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    z-index:10;
+    animation:floatHeart 2s ease-in-out infinite;
+}
+
+.heart-button:before,
+.heart-button:after{
+    content:"";
+    position:absolute;
+    top:20px;
+    width:110px;
+    height:165px;
+    background:linear-gradient(145deg,#ff1744,#8b0928);
+    border-radius:100px 100px 0 0;
+    box-shadow:
+        0 0 20px #ff1744,
+        0 0 50px rgba(255,23,68,.7);
+}
+
+.heart-button:before{
+    left:52px;
+    transform:rotate(-45deg);
+    transform-origin:0 100%;
+}
+
+.heart-button:after{
+    right:52px;
+    transform:rotate(45deg);
+    transform-origin:100% 100%;
+}
+
+.heart-text{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:20;
+    color:white;
+    font-size:23px;
+    font-weight:bold;
+    text-shadow:0 2px 7px #000;
+}
+
+@keyframes floatHeart{
+    0%,100%{
+        transform:translateY(0) scale(1);
+    }
+    50%{
+        transform:translateY(-12px) scale(1.05);
+    }
+}
+
+/* =========================
+   الألعاب النارية
+========================= */
+
+#fireworks{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+
+/* =========================
+   المشهد الثاني
+========================= */
+
+#scene2{
+    background:#000;
+    align-items:center;
+    justify-content:center;
+}
+
+.blackbar{
+    position:absolute;
+    left:0;
+    right:0;
+    height:12vh;
+    background:#000;
+    z-index:5;
+}
+
+.blackbar.top{
+    top:0;
+}
+
+.blackbar.bottom{
+    bottom:0;
+}
+
+.timer{
+    position:absolute;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+    border:1px solid white;
+    border-radius:5px;
+    padding:6px 15px;
+    font-size:13px;
+    z-index:20;
+    letter-spacing:2px;
+}
+
+.countdown{
+    font-size:110px;
+    font-weight:bold;
+    color:#fff;
+    animation:countAnimation 2.65s ease-in-out;
+}
+
+@keyframes countAnimation{
+    0%{
+        opacity:0;
+        transform:scale(1.8);
+        filter:blur(10px);
+    }
+
+    25%{
+        opacity:1;
+        transform:scale(1);
+        filter:blur(0);
+    }
+
+    75%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(.6);
+    }
+}
+
+/* =========================
+   المشهد الثالث
+========================= */
+
+#scene3{
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+        radial-gradient(circle at 50% 20%,
+        rgba(255,255,255,.12),
+        transparent 25%),
+        linear-gradient(
+            150deg,
+            #16030a,
+            #540b21,
+            #16030a
+        );
+}
+
+.glow{
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#ff1744;
+    opacity:.1;
+    filter:blur(100px);
+    border-radius:50%;
+}
+
+.card{
+    position:relative;
+    z-index:5;
+    width:min(90%,600px);
+    padding:40px 22px;
+
+    background:rgba(30,0,12,.65);
+    border:1px solid rgba(255,120,150,.35);
+    border-radius:25px;
+
+    box-shadow:
+        0 0 50px rgba(255,0,70,.25),
+        inset 0 0 30px rgba(255,0,70,.1);
+
+    backdrop-filter:blur(10px);
+
+    animation:cardIn 1.5s ease;
+}
+
+@keyframes cardIn{
+    from{
+        opacity:0;
+        transform:scale(.7) rotateX(20deg);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1) rotateX(0);
+    }
+}
+
+.card .small{
+    font-size:16px;
+    color:#ffb7c5;
+    margin-bottom:15px;
+}
+
+.card h1{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#fff;
+    text-shadow:0 0 20px #ff1744;
+}
+
+.card p{
+    font-size:18px;
+    line-height:2;
+    color:#ffe9ed;
+}
+
+.card .name{
+    color:#ff4264;
+    font-weight:bold;
+}
+
+/* =========================
+   المشهد الرابع
+========================= */
+
+#scene4{
+    align-items:center;
+    justify-content:center;
+    background:
+        linear-gradient(
+            to bottom,
+            #102d26 0%,
+            #286246 40%,
+            #123b29 70%,
+            #06100a 100%
+        );
+}
+
+/* القمر */
+
+.moon{
+    position:absolute;
+    top:8%;
+    right:12%;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#fff4d0;
+    box-shadow:0 0 40px rgba(255,244,208,.7);
+}
+
+/* الشلالات */
+
+.water{
+    position:absolute;
+    top:0;
+    width:80px;
+    height:60%;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,.85),
+            rgba(150,230,240,.4),
+            transparent
+        );
+    filter:blur(4px);
+    opacity:.7;
+}
+
+.water.left{
+    left:5%;
+    transform:rotate(4deg);
+}
+
+.water.right{
+    right:5%;
+    transform:rotate(-4deg);
+}
+
+/* النباتات */
+
+.plant{
+    position:absolute;
+    font-size:35px;
+    opacity:.85;
+    animation:sway 4s ease-in-out infinite;
+}
+
+.p1{
+    top:15%;
+    left:5%;
+}
+
+.p2{
+    top:25%;
+    right:6%;
+}
+
+.p3{
+    bottom:18%;
+    left:7%;
+}
+
+.p4{
+    bottom:20%;
+    right:8%;
+}
+
+@keyframes sway{
+    0%,100%{
+        transform:rotate(-7deg);
+    }
+
+    50%{
+        transform:rotate(7deg);
+    }
+}
+
+/* النجوم */
+
+.star{
+    position:absolute;
+    color:#fff6cf;
+    animation:twinkle 1.5s infinite alternate;
+}
+
+.s1{top:12%;left:30%;}
+.s2{top:20%;left:55%;}
+.s3{top:10%;right:35%;}
+.s4{top:28%;right:25%;}
+
+@keyframes twinkle{
+    from{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.2);
+    }
+}
+
+/* الطاولة */
+
+.table{
+    position:absolute;
+    bottom:-10%;
+    width:120%;
+    height:32%;
+    background:
+        radial-gradient(
+            ellipse at center,
+            #75452b,
+            #30180d 70%
+        );
+    border-radius:50% 50% 0 0;
+}
+
+/* منطقة الكعكة */
+
+.cake-area{
+    position:relative;
+    z-index:10;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:-40px;
+}
+
+/* الشموع */
+
+.candles{
+    display:flex;
+    gap:12px;
+    margin-bottom:-5px;
+}
+
+.candle{
+    position:relative;
+    width:10px;
+    height:48px;
+    background:linear-gradient(
+        to right,
+        #fff,
+        #e59ca8,
+        #fff
+    );
+    border-radius:4px;
+}
+
+.flame{
+    position:absolute;
+    top:-20px;
+    left:-2px;
+    width:14px;
+    height:20px;
+    background:#ffb300;
+    border-radius:50%;
+    box-shadow:0 0 18px #ff9800;
+    animation:flame .7s alternate infinite;
+}
+
+@keyframes flame{
+    from{
+        transform:scale(.8) rotate(-4deg);
+    }
+
+    to{
+        transform:scale(1.15) rotate(4deg);
+    }
+}
+
+/* الكعكة 3 طبقات */
+
+.cake{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.layer{
+    position:relative;
+    height:52px;
+    border-radius:14px 14px 8px 8px;
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+.layer1{
+    width:230px;
+    background:linear-gradient(#ff7086,#a80f32);
+}
+
+.layer2{
+    width:190px;
+    background:linear-gradient(#ff8fa0,#c21942);
+    margin-top:-4px;
+}
+
+.layer3{
+    width:150px;
+    background:linear-gradient(#ffb5c1,#d62c50);
+    margin-top:-4px;
+}
+
+.cream{
+    position:absolute;
+    top:-10px;
+    left:0;
+    right:0;
+    height:20px;
+    border-radius:50%;
+    background:#fff0f3;
+}
+
+/* شمعة 17 */
+
+.big-candle{
+    position:absolute;
+    bottom:145px;
+    width:45px;
+    height:75px;
+    border-radius:6px;
+    background:linear-gradient(
+        to right,
+        #fff,
+        #ffc4ce,
+        #fff
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#a4002d;
+    font-size:23px;
+    font-weight:bold;
+    z-index:20;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.big-candle .flame{
+    top:-25px;
+    left:15px;
+}
+
+/* Happy Birthday */
+
+.english{
+    direction:ltr;
+    margin-top:20px;
+    font-size:21px;
+    font-weight:bold;
+    color:white;
+    text-shadow:0 0 18px #ff1744;
+}
+
+/* =========================
+   المشهد الخامس
+========================= */
+
+#scene5{
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #5c0925,
+            #25030f 50%,
+            #070005 100%
+        );
+}
+
+.final-card{
+    position:relative;
+    z-index:20;
+
+    width:min(90%,620px);
+    padding:35px 22px;
+
+    border-radius:25px;
+    background:rgba(45,0,15,.6);
+
+    border:1px solid rgba(255,120,150,.3);
+
+    box-shadow:
+        0 0 60px rgba(255,0,70,.25),
+        inset 0 0 30px rgba(255,0,70,.1);
+
+    animation:finalIn 2s ease;
+}
+
+@keyframes finalIn{
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.final-card h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#fff;
+    text-shadow:0 0 20px #ff1744;
+}
+
+.final-card p{
+    font-size:19px;
+    line-height:2.2;
+    color:#ffe6eb;
+}
+
+.main-heart{
+    font-size:50px;
+    display:block;
+    margin-top:15px;
+    animation:heartBeat 1.2s infinite;
+}
+
+@keyframes heartBeat{
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.25);
+    }
+}
+
+/* قلوب النهاية */
+
+.floating-heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff1744;
+    filter:drop-shadow(0 0 8px #ff1744);
+    animation:rise linear infinite;
+}
+
+@keyframes rise{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* الهاتف */
+
+@media(max-width:600px){
+
+    .intro-title{
+        font-size:16px;
+    }
+
+    .heart-button{
+        transform:scale(.9);
+    }
+
+    .countdown{
+        font-size:90px;
+    }
+
+    .card h1{
+        font-size:29px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+    .layer1{
+        width:210px;
+    }
+
+    .layer2{
+        width:175px;
+    }
+
+    .layer3{
+        width:140px;
+    }
+
+    .english{
+        font-size:18px;
+    }
+
+    .final-card h2{
+        font-size:26px;
+    }
+
+    .final-card p{
+        font-size:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ==================================
+     المشهد الأول
+================================== -->
+
+<section id="scene1" class="scene active">
+
+    <div class="intro-title">
+        هدية خاصة بمناسبة عيد ميلاد سمية ❤️
+    </div>
+
+    <button class="heart-button" id="startButton">
+        <span class="heart-text">اضغطي هنا</span>
+    </button>
+
+    <div class="intro-sub">
+        هناك مفاجأة تنتظركِ ✨
+    </div>
+
+    <canvas id="fireworks"></canvas>
+
+</section>
+
+
+<!-- ==================================
+     المشهد الثاني
+================================== -->
+
+<section id="scene2" class="scene">
+
+    <div class="blackbar top"></div>
+    <div class="blackbar bottom"></div>
+
+    <div class="timer" id="timer">
+        08.0
+    </div>
+
+    <div class="countdown" id="countdown">
+        3
+    </div>
+
+</section>
+
+
+<!-- ==================================
+     المشهد الثالث
+================================== -->
+
+<section id="scene3" class="scene">
+
+    <div class="glow"></div>
+
+    <div class="card">
+
+        <div class="small">
+            هدية عيد ميلاد تفاعلية 🎁
+        </div>
+
+        <h1>
+            عيد ميلاد سعيد ❤️
+        </h1>
+
+        <p>
+            إلى أجمل إنسانة
+        </p>
+
+        <p>
+            <span class="name">
+                سمية الخميري
+            </span>
+        </p>
+
+        <p>
+            <br>
+            Interactive Birthday Gift
+            <br>
+            Happy Birthday
+            <br>
+            make a wish...
+            <br>
+            to someone worth celebrating
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================
+     المشهد الرابع
+================================== -->
+
+<section id="scene4" class="scene">
+
+    <div class="moon"></div>
+
+    <div class="water left"></div>
+    <div class="water right"></div>
+
+    <div class="plant p1">🌿</div>
+    <div class="plant p2">🍃</div>
+    <div class="plant p3">🌿</div>
+    <div class="plant p4">🍃</div>
+
+    <div class="star s1">✦</div>
+    <div class="star s2">✧</div>
+    <div class="star s3">✦</div>
+    <div class="star s4">✧</div>
+
+    <div class="table"></div>
+
+    <div class="cake-area">
+
+        <div class="candles">
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+        </div>
+
+        <div class="big-candle">
+
+            <div class="flame"></div>
+
+            17
+
+        </div>
+
+        <div class="cake">
+
+            <div class="layer layer3">
+                <div class="cream"></div>
+            </div>
+
+            <div class="layer layer2">
+                <div class="cream"></div>
+            </div>
+
+            <div class="layer layer1">
+                <div class="cream"></div>
+            </div>
+
+        </div>
+
+        <div style="
+            margin-top:12px;
+            font-size:20px;
+            letter-spacing:5px;
+        ">
+            🌹 🌹 🌹
+        </div>
+
+        <div class="english">
+            Happy Birthday to You
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================
+     المشهد الخامس
+================================== -->
+
+<section id="scene5" class="scene">
+
+    <div class="final-card">
+
+        <h2>
+            سمية ❤️
+        </h2>
+
+        <p>
+            أنا آسف لأنني لم أقدم أي هدية مادية
+            بسبب البعد 😍
+        </p>
+
+        <p>
+            وأتمنى أن تعجبك هديتي
+            التي صنعتها لكِ من القلب ❤️
+        </p>
+
+        <span class="main-heart">
+            ❤️
+        </span>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* ==================================
+   المشاهد
+================================== */
+
+const scenes = [
+    document.getElementById("scene1"),
+    document.getElementById("scene2"),
+    document.getElementById("scene3"),
+    document.getElementById("scene4"),
+    document.getElementById("scene5")
+];
+
+function showScene(number){
+
+    scenes.forEach(scene=>{
+        scene.classList.remove("active");
+    });
+
+    scenes[number].classList.add("active");
+}
+
+
+/* ==================================
+   عداد المشهد السينمائي
+================================== */
+
+function runCinema(){
+
+    showScene(1);
+
+    const countdown =
+        document.getElementById("countdown");
+
+    const timer =
+        document.getElementById("timer");
+
+    const numbers = ["3","2","1"];
+
+    let index = 0;
+
+    let remaining = 8;
+
+    timer.textContent = "08.0";
+
+    /* عداد 8 ثوان */
+
+    const timerInterval = setInterval(()=>{
+
+        remaining -= 0.1;
+
+        if(remaining < 0){
+            remaining = 0;
+        }
+
+        timer.textContent =
+            remaining.toFixed(1);
+
+    },100);
+
+    function nextNumber(){
+
+        countdown.style.animation = "none";
+
+        void countdown.offsetWidth;
+
+        countdown.textContent =
+            numbers[index];
+
+        countdown.style.animation =
+            "countAnimation 2.65s ease-in-out";
+
+        index++;
+
+        if(index < numbers.length){
+
+            setTimeout(nextNumber,2666);
+
+        }else{
+
+            setTimeout(()=>{
+
+                clearInterval(timerInterval);
+
+                showScene(2);
+
+                runScene3();
+
+            },1340);
+
+        }
+    }
+
+    nextNumber();
+}
+
+
+/* ==================================
+   المشهد الثالث 8 ثوان
+================================== */
+
+function runScene3(){
+
+    setTimeout(()=>{
+
+        showScene(3);
+
+        runScene4();
+
+    },8000);
+
+}
+
+
+/* ==================================
+   المشهد الرابع 8 ثوان
+================================== */
+
+function runScene4(){
+
+    setTimeout(()=>{
+
+        showScene(4);
+
+        createFinalHearts();
+
+    },8000);
+
+}
+
+
+/* ==================================
+   المشهد الخامس 8 ثوان
+================================== */
+
+function createFinalHearts(){
+
+    const scene =
+        document.getElementById("scene5");
+
+    for(let i=0;i<45;i++){
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "floating-heart";
+
+        heart.textContent =
+            Math.random() > .5
+            ? "❤️"
+            : "💗";
+
+        heart.style.left =
+            Math.random()*100 + "%";
+
+        heart.style.fontSize =
+            (15 + Math.random()*25) + "px";
+
+        heart.style.animationDuration =
+            (5 + Math.random()*6) + "s";
+
+        heart.style.animationDelay =
+            Math.random()*5 + "s";
+
+        scene.appendChild(heart);
+    }
+
+    /*
+       يبقى المشهد الأخير 8 ثوان
+       ثم يمكن إعادة الموقع للبداية.
+    */
+
+    setTimeout(()=>{
+
+        showScene(0);
+
+    },8000);
+
+}
+
+
+/* ==================================
+   زر اضغطي هنا
+================================== */
+
+document
+.getElementById("startButton")
+.addEventListener("click",()=>{
+
+    runCinema();
+
+});
+
+
+/* ==================================
+   الألعاب النارية
+================================== */
+
+const canvas =
+    document.getElementById("fireworks");
+
+const ctx =
+    canvas.getContext("2d");
+
+let particles = [];
+
+function resizeCanvas(){
+
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
+
+}
+
+resizeCanvas();
+
+window.addEventListener(
+    "resize",
+    resizeCanvas
+);
+
+
+function createFirework(x,y){
+
+    for(let i=0;i<45;i++){
+
+        const angle =
+            Math.random()*Math.PI*2;
+
+        const speed =
+            1 + Math.random()*5;
+
+        particles.push({
+
+            x:x,
+
+            y:y,
+
+            vx:
+                Math.cos(angle)*speed,
+
+            vy:
+                Math.sin(angle)*speed,
+
+            life:70 + Math.random()*30,
+
+            size:1 + Math.random()*3
+
+        });
+
+    }
+
+}
+
+
+function animateFireworks(){
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+    particles.forEach((p,index)=>{
+
+        p.x += p.vx;
+
+        p.y += p.vy;
+
+        p.vy += .035;
+
+        p.life--;
+
+        ctx.beginPath();
+
+        ctx.arc(
+            p.x,
+            p.y,
+            p.size,
+            0,
+            Math.PI*2
+        );
+
+        ctx.fillStyle =
+            "rgba(255,80,120," +
+            Math.max(p.life/100,0) +
+            ")";
+
+        ctx.fill();
+
+        if(p.life<=0){
+
+            particles.splice(index,1);
+
+        }
+
+    });
+
+    requestAnimationFrame(
+        animateFireworks
+    );
+
+}
+
+animateFireworks();
+
+
+/* ألعاب نارية مستمرة في البداية */
+
+setInterval(()=>{
+
+    const x =
+        80 + Math.random() *
+        (canvas.width - 160);
+
+    const y =
+        canvas.height * (.55 + Math.random()*.35);
+
+    createFirework(x,y);
+
+},900);
+
+</script>
+
+</body>
+</html>
